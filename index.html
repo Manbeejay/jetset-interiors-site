@@ -305,12 +305,14 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
 .modal label{display:block;font-size:.86rem;font-weight:600;margin:0 0 6px}
 .modal .field{margin-bottom:16px}
 .modal input,.modal select{
-}
-.modal textarea {
   width:100%;padding:12px 13px;border-radius:10px;border:1px solid var(--line);
   font-family:inherit;font-size:1rem;background:#fff;color:var(--ink);
 }
-.modal input:focus,.modal select:focus{border-color:var(--cta)}
+.modal textarea{
+  width:100%;padding:12px 13px;border-radius:10px;border:1px solid var(--line);
+  font-family:inherit;font-size:1rem;background:#fff;color:var(--ink);resize:vertical;
+}
+.modal input:focus,.modal select:focus,.modal textarea:focus{border-color:var(--cta)}
 .modal-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .modal-close{
   background:transparent;border:0;font-size:1.4rem;line-height:1;color:#8A6479;cursor:pointer;
@@ -415,47 +417,47 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ SERVICES ============ -->
   <section class="services" id="services">
     <div class="wrap">
-      <h2>What We Do</h2>
+      <h2>What we do</h2>
       <p class="lede">One team from the first sketch to the day you move the furniture in.</p>
       <ul class="svc">
         <li>
-          <h3>Interior Design &amp; Space Planning</h3>
+          <h3>Interior design &amp; space planning</h3>
           <p>We plan how a space works before we make it beautiful: flow, storage, seating, light.</p>
         </li>
         <li>
-          <h3>Residential Interior Decoration</h3>
+          <h3>Residential interior decoration</h3>
           <p>Sitting rooms, bedrooms, kitchens and outdoor spaces, finished to suit how your family lives.</p>
         </li>
         <li>
-          <h3>Commercial Interior Decoration</h3>
+          <h3>Commercial interior decoration</h3>
           <p>Offices, shops, salons, clinics and short-let apartments built to work hard and look sharp.</p>
         </li>
         <li>
-          <h3>Furniture Selection &amp; Customisation</h3>
+          <h3>Furniture selection &amp; customisation</h3>
           <p>Sourced locally or made to your measurements by joiners we have worked with for years.</p>
         </li>
         <li>
-          <h3>Lighting Design &amp; Installation</h3>
+          <h3>Lighting design &amp; installation</h3>
           <p>Layered lighting planned around Enugu's power realities, with inverter-friendly fittings.</p>
         </li>
         <li>
-          <h3>Wall Finishes &amp; Feature Walls</h3>
+          <h3>Wall finishes &amp; feature walls</h3>
           <p>Paint, texture, panelling, wallpaper, stone and media walls, installed by trained hands.</p>
         </li>
         <li>
-          <h3>Curtains, Blinds &amp; Window Treatment</h3>
+          <h3>Curtains, blinds &amp; window treatment</h3>
           <p>Measured on site, sewn in our workroom, hung and dressed properly.</p>
         </li>
         <li>
-          <h3>3D Design Visualisation</h3>
+          <h3>3D design visualisation</h3>
           <p>See the finished room before a single naira goes into materials.</p>
         </li>
         <li>
-          <h3>Renovation &amp; Makeovers</h3>
+          <h3>Renovation &amp; makeovers</h3>
           <p>Tired spaces reworked room by room, with as little disruption as the job allows.</p>
         </li>
         <li>
-          <h3>Project Management</h3>
+          <h3>Project management</h3>
           <p>We hire, schedule and supervise the trades, and hand you the keys at the end.</p>
         </li>
       </ul>
@@ -465,7 +467,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ WHY / ABOUT ============ -->
   <section id="about">
     <div class="wrap">
-      <h2>Why People Call Us Back</h2>
+      <h2>Why people call us back</h2>
       <p class="lede">JetSet Interiors has been designing and fitting out spaces in Enugu for over a decade. Most of our work comes from clients sending us their friends.</p>
       <div class="why">
         <div>
@@ -507,28 +509,28 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
           <h3>Design Consultation</h3>
           <p class="tier-price">&#8358;25,000 &ndash; &#8358;40,000</p>
           <p class="tier-desc">One visit, in person or virtual. We assess the space and give you verbal recommendations on layout, colour and materials. No drawings included.</p>
-          <a class="tier-cta" href="#" onclick="openQuoteModal();return false;">Book this</a>
+          <a class="tier-cta" href="#" onclick="openQuoteModal('Design Consultation');return false;">Book this</a>
         </div>
         <div class="tier">
           <span class="tier-eyebrow">Tier 2</span>
           <h3>Design Package</h3>
           <p class="tier-price">&#8358;80,000 &ndash; &#8358;150,000</p>
           <p class="tier-desc">Full design plan: layout drawings, a mood board, and a materials and furniture sourcing list with supplier contacts. Price depends on room count. Execute it yourself or hand it to your own contractor.</p>
-          <a class="tier-cta" href="#" onclick="openQuoteModal();return false;">Book this</a>
+          <a class="tier-cta" href="#" onclick="openQuoteModal('Design Package');return false;">Book this</a>
         </div>
         <div class="tier">
           <span class="tier-eyebrow">Tier 3</span>
           <h3>Design + Project Management</h3>
           <p class="tier-price">Design fee + 10&ndash;15%</p>
           <p class="tier-desc">We design, then manage the tradespeople through execution: scheduling, quality checks and reporting. The percentage is of total project cost, on top of the Tier 2 design fee.</p>
-          <a class="tier-cta" href="#" onclick="openQuoteModal();return false;">Book this</a>
+          <a class="tier-cta" href="#" onclick="openQuoteModal('Design + Project Management');return false;">Book this</a>
         </div>
         <div class="tier tier-commercial">
           <span class="tier-eyebrow">Tier 4</span>
           <h3>Commercial Fit-Out</h3>
           <p class="tier-price">From &#8358;500,000</p>
           <p class="tier-desc">Shops, salons, clinics and small offices. Every commercial fit-out is different, so this is a custom quote after a site visit.</p>
-          <a class="tier-cta tier-cta-quote" href="#" onclick="openQuoteModal();return false;">Contact for quote</a>
+          <a class="tier-cta tier-cta-quote" href="#" onclick="openQuoteModal('Commercial Fit-Out');return false;">Contact for quote</a>
         </div>
       </div>
     </div>
@@ -537,7 +539,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ GALLERY ============ -->
   <section class="gallery" id="gallery">
     <div class="wrap">
-      <h2>Recent Work</h2>
+      <h2>Recent work</h2>
       <p class="lede">A few of the rooms we have finished around Independence Layout, GRA, New Haven and Thinkers Corner.</p>
       <div class="grid">
         <figure class="tall" onclick="openLightbox('images/hero-1.jpg','Bedroom refresh')">
@@ -579,7 +581,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ REVIEWS ============ -->
   <section class="reviews">
     <div class="wrap">
-      <h2>What Clients Say</h2>
+      <h2>What clients say</h2>
       <p class="lede">Reviews from homes and businesses we have worked in.</p>
       <div class="rail" tabindex="0" aria-label="Client reviews, scroll sideways">
         <blockquote class="rev">
@@ -603,42 +605,31 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
           <cite>Ifeanyi A.</cite><span>Trans-Ekulu</span>
         </blockquote>
       </div>
+      <p class="note">SWAP: replace these with real reviews from your Google Business Profile.</p>
     </div>
   </section>
 
   <!-- ============ PARTNERS ============ -->
   <section class="partners">
     <div class="wrap">
-      <h2>Our Partners</h2>
+      <h2>Our partners</h2>
       <p class="lede">Organisations we have worked with and alongside.</p>
       <div class="rail" tabindex="0" aria-label="Partner organisations, scroll sideways">
         <div class="partner">
-          <img src="images/logo-mekkan-technologies.png" alt="Moniepoint logo">
-          <span>Mekkan Technologies</span>
+          <img src="images/logo-moniepoint.png" alt="Moniepoint logo">
+          <span>Moniepoint</span>
         </div>
         <div class="partner">
-          <img src="images/logo-waterock-global.png" alt="Polaris Bank logo">
-          <span>Waterock Global</span>
+          <img src="images/logo-polaris-bank.png" alt="Polaris Bank logo">
+          <span>Polaris Bank</span>
         </div>
         <div class="partner">
-          <img src="images/logo-zenith-bank.png" alt="United Capital logo">
-          <span>Zenith Bank</span>
+          <img src="images/logo-united-capital.png" alt="United Capital logo">
+          <span>United Capital</span>
         </div>
         <div class="partner">
-          <img src="images/logo-office-depot.png" alt="United Capital logo">
-          <span>Office Depot</span>
-        </div>
-        <div class="partner">
-          <img src="images/logo-sofas.png" alt="United Capital logo">
-          <span>Sofas</span>
-        </div>
-        <div class="partner">
-          <img src="images/logo-espoly.png" alt="United Capital logo">
-          <span>ESPOLY</span>
-        </div>
-        <div class="partner">
-          <img src="images/logo-ensubeb.png" alt="Leap Africa logo">
-          <span>ENSUBEB</span>
+          <img src="images/logo-leap-africa.png" alt="Leap Africa logo">
+          <span>Leap Africa</span>
         </div>
       </div>
     </div>
@@ -647,7 +638,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ CONTACT + HOURS ============ -->
   <section class="visit" id="visit">
     <div class="wrap">
-      <h2>Get In Touch</h2>
+      <h2>Get in touch</h2>
       <div class="cols">
         <div>
           <h3>Reach us</h3>
@@ -662,7 +653,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
             </div>
             <div class="addr-row">
               <svg class="addr-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-7.4 7-12.5A7 7 0 0 0 5 9.5C5 14.6 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-              <span>Consultations by appointment, at location or virtual.</span>
+              <span>Consultations by appointment, at your location or virtual.</span>
             </div>
           </address>
           <img class="contact-photo" src="images/home-office.jpg" alt="Calm home workspace with desk, laptop and plant">
@@ -687,7 +678,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ TERMS ============ -->
   <section class="terms" id="terms">
     <div class="wrap inner">
-      <h2>Terms of Service</h2>
+      <h2>Terms of service</h2>
       <p class="lede">Full pricing for Tiers 1 to 3 is shown above. Here is the rest of how we work, in plain terms.</p>
 
       <details open>
@@ -754,7 +745,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <!-- ============ FINAL CTA ============ -->
   <section class="final">
     <div class="wrap">
-      <h2>Tell Us About Your Space</h2>
+      <h2>Tell us about your space</h2>
       <p>Message us on WhatsApp with a few details, or book a paid consultation from the pricing above. Most quotes go out within three working days.</p>
       <div class="btn-row">
         <a class="btn" href="https://wa.me/2348037079002?text=Hello%20JetSet%20Interiors%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">Message on WhatsApp<small>Fastest way to reach us</small></a>
@@ -790,7 +781,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M15 3v10.5a3.5 3.5 0 1 1-3-3.46V7a7 7 0 0 0 7 3V6.5A4 4 0 0 1 15 3z"/></svg>
       </a>
     </div>
-    <p>JetSet Interiors &middot; <a href="tel:+2348037079002">0803 707 9002</a> &middot; Consultations by appointment, at location or virtual.</p>
+    <p>JetSet Interiors &middot; <a href="tel:+2348037079002">0803 707 9002</a> &middot; Consultations by appointment, at your location or virtual.</p>
     <p>JetSet Interiors Ventures &middot; BN 2032861</p>
     <p>&copy; <span id="yr">2026</span> JetSet Interiors. All rights reserved.</p>
   </div>
@@ -821,7 +812,7 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
   <div class="modal">
     <div class="modal-top">
       <div>
-        <h3>Request a quote</h3>
+        <h3 id="quoteModalTitle">Request a quote</h3>
         <p class="lede">Tell us a little about the space. We reply the same working day.</p>
       </div>
       <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close form">&times;</button>
@@ -855,6 +846,10 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;padding:0;list
           <option>&#8358;10,000,000 and above</option>
           <option>Not sure yet</option>
         </select>
+      </div>
+      <div class="field">
+        <label for="qMessage">Tell us briefly about the job</label>
+        <textarea id="qMessage" rows="3" placeholder="e.g. Two-bedroom flat, want a full redesign before December"></textarea>
       </div>
       <button type="submit" class="modal-submit">Send on WhatsApp</button>
       <p class="modal-note">This opens WhatsApp with your details filled in, ready to send.</p>
@@ -912,7 +907,10 @@ function closePrivacyModal(){
   document.body.style.overflow = '';
 }
 
-function openQuoteModal(){
+var currentQuoteTier = '';
+function openQuoteModal(tier){
+  currentQuoteTier = tier || '';
+  document.getElementById('quoteModalTitle').textContent = tier ? ('Request a quote \u2014 ' + tier) : 'Request a quote';
   document.getElementById('quoteModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -926,11 +924,14 @@ function submitQuote(e){
   var phone = document.getElementById('qPhone').value.trim();
   var space = document.getElementById('qSpace').value;
   var budget = document.getElementById('qBudget').value;
-  var msg = "Hello JetSet Interiors, I'd like a quote.\n" +
+  var message = document.getElementById('qMessage').value.trim();
+  var msg = "Hello JetSet Interiors, I'd like a quote" +
+            (currentQuoteTier ? (" for " + currentQuoteTier) : "") + ".\n" +
             "Name: " + name + "\n" +
             "Phone: " + phone + "\n" +
             "Space: " + space + "\n" +
-            "Budget: " + budget;
+            "Budget: " + budget +
+            (message ? ("\nJob description: " + message) : "");
   window.open("https://wa.me/2348037079002?text=" + encodeURIComponent(msg), "_blank");
   closeQuoteModal();
 }
