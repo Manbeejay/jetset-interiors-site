@@ -1,0 +1,15 @@
+{
+  "name": "jetset-interiors-site",
+  "version": "1.0.0",
+  "description": "JetSet Interiors - Interior Design & Space Planning in Enugu",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "dev": "npx serve ."
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
